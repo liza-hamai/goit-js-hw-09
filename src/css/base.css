@@ -30,3 +30,42 @@ main {
 main:has(.back-link) {
   text-align: center;
 }
+
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-link {
+  margin-bottom: 16px;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
