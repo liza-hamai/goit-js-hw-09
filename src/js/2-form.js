@@ -21,6 +21,9 @@ form.addEventListener("input", event => {
 form.addEventListener("submit", event => {
     event.preventDefault();
 
+    formData.email = formData.email.trim();
+    formData.message = formData.message.trim();
+
     if (!formData.email || !formData.message) {
         alert("Fill please all fields");
         return;
@@ -29,4 +32,7 @@ form.addEventListener("submit", event => {
     console.log(formData);
     localStorage.removeItem(localStorageKey);
     form.reset();
+
+    formData.email = "";
+    formData.message = "";
 });
